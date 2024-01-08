@@ -9,8 +9,9 @@ if "!commitMessage!"=="" (
 )
 git add .
 git commit -m "%commitMessage%"
+echo Отправка коммита в GitHub...
 git push origin main
 echo commitMessage = "%commitMessage%"
 echo Коммит успешно создан и отправлен!
-timeout /t 2 >nul
+timeout /t 200 >nul
 exit
